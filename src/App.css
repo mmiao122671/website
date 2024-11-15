@@ -17,19 +17,16 @@ main {
   padding: 2rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
-  background-image: linear-gradient(
-    135deg,
-    rgba(36, 113, 163, 0.95),
-    rgba(46, 64, 83, 0.95)
-  ),
-  url('/src/assets/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 20px;
   margin: 2rem auto;
   max-width: 1200px;
   color: white;
+  min-height: 500px;
 }
 
 .hero-section h1 {
