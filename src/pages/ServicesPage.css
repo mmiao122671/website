@@ -1,0 +1,90 @@
+.services-page {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-page h1 {
+  font-size: 3rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.services-intro {
+  text-align: center;
+  color: #5d6d7e;
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.service-detail-section {
+  margin-bottom: 6rem;
+  padding: 3rem;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-subtitle {
+  font-size: 1.2rem;
+  color: #5d6d7e;
+  margin-bottom: 2rem;
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.service-features h3,
+.service-tech h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  color: #34495e;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-stack span {
+  background: #f8fafc;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .service-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .service-detail-section {
+    padding: 2rem;
+  }
+} 
