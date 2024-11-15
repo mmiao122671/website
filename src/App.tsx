@@ -6,6 +6,10 @@ import { AboutPage } from './pages/AboutPage'
 import { ContactPage } from './pages/ContactPage'
 import './App.css'
 
+// Import the background image
+import bgImage from './assets/background.jpg'
+console.log('Background image path:', bgImage)
+
 function App() {
   return (
     <Router>
@@ -14,7 +18,18 @@ function App() {
         <Routes>
           <Route path="/" element={
             <main>
-              <section id="home" className="hero-section">
+              <section id="home" className="hero-section" style={{
+                backgroundImage: `linear-gradient(
+                  135deg,
+                  rgba(36, 113, 163, 0.8),
+                  rgba(46, 64, 83, 0.8)
+                ),
+                url("${bgImage}")`,
+                minHeight: '400px',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundColor: '#2471a3'
+              }}>
                 <h1>Building Tomorrow's Software Today</h1>
                 <p className="hero-main">Innovative solutions for modern businesses</p>
               </section>
