@@ -17,7 +17,7 @@ export function ContactPage() {
       `Message: ${formData.message}`
     )
     
-    const toEmail = 'blocksoftwareinc@gmail.com'
+    const toEmail = 'contact@blocksoftware.ca'
     window.location.href = `mailto:${toEmail}?subject=${emailSubject}&body=${emailBody}`
   }
 
@@ -39,7 +39,7 @@ export function ContactPage() {
           <h2>Let's Connect</h2>
           <div className="info-item">
             <h3>Email</h3>
-            <p>blocksoftwareinc@gmail.com</p>
+            <p>contact@blocksoftware.ca</p>
           </div>
           <div className="info-item">
             <h3>Location</h3>
