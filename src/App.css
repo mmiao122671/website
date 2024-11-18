@@ -63,6 +63,10 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-decoration: none;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .service-card:nth-child(1) {
@@ -150,5 +154,16 @@ main {
 .contact-button:hover {
   transform: translateY(-2px);
   color: white;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
 }
 
