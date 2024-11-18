@@ -5,6 +5,9 @@ import { ServicesPage } from './pages/ServicesPage'
 import { AboutPage } from './pages/AboutPage'
 import { ContactPage } from './pages/ContactPage'
 import './App.css'
+import { FaGlobe } from 'react-icons/fa'
+import { FaLaptopCode } from 'react-icons/fa'
+import { FaEthereum } from 'react-icons/fa'
 
 // Import the background image
 import bgImage from './assets/background.jpg'
@@ -38,14 +41,17 @@ function App() {
                 <h2>Our Services</h2>
                 <div className="services-grid">
                   <Link to="/services#web" className="service-card">
+                    <FaGlobe className="service-icon" />
                     <h3>Web Applications</h3>
                     <p>Powerful and responsive web experiences</p>
                   </Link>
                   <Link to="/services#software" className="service-card">
+                    <FaLaptopCode className="service-icon" />
                     <h3>Software Development</h3>
                     <p>Tailored solutions for your unique needs</p>
                   </Link>
                   <Link to="/services#web3" className="service-card">
+                    <FaEthereum className="service-icon" />
                     <h3>Web3 Development</h3>
                     <p>Blockchain and decentralized applications</p>
                   </Link>
