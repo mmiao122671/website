@@ -1,4 +1,5 @@
 import './AboutPage.css'
+import { FaLightbulb, FaAward, FaHandshake, FaBrain } from 'react-icons/fa';
 
 export function AboutPage() {
   return (
@@ -21,19 +22,31 @@ export function AboutPage() {
 
         <div className="about-grid">
           <div className="about-card">
-            <h3>Innovation</h3>
+            <div className="card-header">
+              <FaLightbulb className="card-icon" />
+              <h3>Innovation</h3>
+            </div>
             <p>Pushing boundaries with cutting-edge technology solutions</p>
           </div>
           <div className="about-card">
-            <h3>Quality</h3>
+            <div className="card-header">
+              <FaAward className="card-icon" />
+              <h3>Quality</h3>
+            </div>
             <p>Delivering excellence through rigorous development standards</p>
           </div>
           <div className="about-card">
-            <h3>Reliability</h3>
+            <div className="card-header">
+              <FaHandshake className="card-icon" />
+              <h3>Reliability</h3>
+            </div>
             <p>Building lasting partnerships with dependable solutions</p>
           </div>
           <div className="about-card">
-            <h3>Expertise</h3>
+            <div className="card-header">
+              <FaBrain className="card-icon" />
+              <h3>Expertise</h3>
+            </div>
             <p>Leveraging deep technical knowledge and industry experience</p>
           </div>
         </div>

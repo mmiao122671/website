@@ -1,10 +1,12 @@
 import { useEffect } from 'react'
 import './ServicesPage.css'
+import { FaGlobe, FaLaptopCode, FaEthereum } from 'react-icons/fa';
 
 const serviceDetails = {
   web: {
     title: "Web Applications",
     description: "Powerful and responsive web experiences",
+    icon: FaGlobe,
     details: [
       "Single Page Applications (SPA)",
       "Progressive Web Apps (PWA)",
@@ -18,6 +20,7 @@ const serviceDetails = {
   software: {
     title: "Software Development",
     description: "Tailored solutions for your unique needs",
+    icon: FaLaptopCode,
     details: [
       "Enterprise Software Development",
       "Cloud-based Solutions",
@@ -31,6 +34,7 @@ const serviceDetails = {
   web3: {
     title: "Web3 Development",
     description: "Blockchain and decentralized applications",
+    icon: FaEthereum,
     details: [
       "Smart Contract Development",
       "DeFi Applications",
@@ -64,7 +68,10 @@ export function ServicesPage() {
       
       {Object.entries(serviceDetails).map(([key, service]) => (
         <div key={key} className="service-detail-section" id={key}>
-          <h2 style={{ color: service.color }}>{service.title}</h2>
+          <div className="title-with-icon">
+            <service.icon size={24} style={{ color: service.color }} />
+            <h2 style={{ color: service.color }}>{service.title}</h2>
+          </div>
           <p className="service-subtitle">{service.description}</p>
           
           <div className="service-content">
