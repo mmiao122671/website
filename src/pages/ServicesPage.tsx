@@ -69,7 +69,7 @@ export function ServicesPage() {
       {Object.entries(serviceDetails).map(([key, service]) => (
         <div key={key} className="service-detail-section" id={key}>
           <div className="title-with-icon">
-            <service.icon size={24} style={{ color: service.color }} />
+            <service.icon size={40} style={{ color: service.color }} />
             <h2 style={{ color: service.color }}>{service.title}</h2>
           </div>
           <p className="service-subtitle">{service.description}</p>
