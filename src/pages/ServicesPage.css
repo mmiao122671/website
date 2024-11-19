@@ -87,4 +87,15 @@
   .service-detail-section {
     padding: 2rem;
   }
+}
+
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.title-with-icon h2 {
+  margin: 0;
 } 
