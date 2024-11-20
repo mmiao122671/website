@@ -98,4 +98,47 @@
 
 .title-with-icon h2 {
   margin: 0;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-container h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.title-container svg {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .title-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .title-container svg {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-container {
+    gap: 8px;
+  }
+  
+  .title-container h2 {
+    font-size: 1.3rem;
+  }
+  
+  .title-container svg {
+    font-size: 1.3rem;
+  }
+} 
 } 
