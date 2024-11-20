@@ -92,10 +92,28 @@
 .title-with-icon {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 1rem;
+  gap: 10px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.title-with-icon img,
+.title-with-icon svg {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 .title-with-icon h2 {
   margin: 0;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .title-with-icon {
+    padding: 0 1rem;
+  }
 } 
